@@ -9,7 +9,7 @@ const ProductCard = ({ product, onProductClick, addToCart }) => {
     >
       <div className="mb-3 relative">
         <img
-          src={`http://localhost:1100/${product.image_url}`}
+          src={`${product.image_url}`}
           // src={`${product.image_url}`}
           alt={product.name}
           className="w-full h-40 object-contain bg-white rounded-lg"

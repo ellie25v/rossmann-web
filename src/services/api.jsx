@@ -56,7 +56,7 @@ export const fetchUserCart = async (userId, products, setCart) => {
 export const updateUserCartItem = async (userId, productId, quantity) => {
   try {
     await api.patch(
-      `/users/${userId}/shopping_cart?product_id=${productId}&quantity=${quantity}`
+      `/users/${userId}/shopping_cart`, { product_id: productId, quantity }
     );
   } catch (error) {
     console.error("Помилка при оновленні корзини:", error);
