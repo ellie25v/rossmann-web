@@ -79,7 +79,7 @@ src/
 ```
 git clone https://github.com/ellie25v/rossmann-web.git
 ```
-2. Install dependencies:
+2. Install dependencies & run:
 
 ```
 npm install
